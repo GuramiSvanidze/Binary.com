@@ -1,0 +1,214 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+header{
+  width: 100%;
+  height: 10vh;
+  background: rgba(5, 1, 12, 0.9);
+}
+
+.navBar{
+  display: flex; 
+  align-items: center;
+  z-index: 1;
+}
+
+
+.logo{
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  position: relative;
+  top: 7px;
+  opacity: 0.8;
+}
+.logo:hover{
+  cursor: none;
+}
+
+  .nav-links{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+    top: 7px;
+  }
+
+
+.nav-links li a{
+  text-decoration: none;
+  font-size: 16px;
+  color: white; 
+  transition: .2s ease;
+}
+
+.nav-links li a:hover{
+  color: tomato;
+}
+.nav-links li a.active{
+  color: tomato;
+}
+
+section{
+  height: 100vh;
+  background: url("images/simply2.jpg") center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  position: relative;
+}
+
+
+.headerh3{  
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+section :nth-child(2) textarea{
+  width: 37%;
+  height: 57%;
+  padding: 0.4em;
+  font-size: 20px;
+  outline: none;
+  box-shadow: 2px black;
+}
+
+textarea:focus{
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.9);
+  }
+
+.bttClass{
+  font-size: 20px;
+  border: 1px solid black;
+  color: white;
+  background: rgba(5, 1, 12, 0.8);
+  padding: 0.5em;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: .2s;
+  letter-spacing: 1px;
+}
+
+.bttClass:hover{
+  background: white;
+  color: red;
+  border: 1px solid black;
+}
+
+.forClear{
+  font-size: 15px;
+  border: 1px solid black;
+  color: white;
+  background: rgba(5, 1, 12, 0.8);
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: .2s;
+  margin-top: 15px;
+  padding: 0.5em 2em;
+  letter-spacing: 5px;
+
+}
+.forClear:hover{
+  background: white;
+  color: red;
+  border: 1px solid black;
+}
+
+h4{
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+section :nth-child(6) textarea{
+  width: 57%;
+  height: 77%;
+  padding: 0.4em;
+  font-size: 20px;
+  outline: none;
+  box-shadow: 2px black;
+}
+
+footer {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(5, 1, 12, 0.9);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+footer p{
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 4px;
+  font-size: 17px;
+}
+
+footer .p2{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 150px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .logo{
+    display: none;
+  }
+  
+  header{
+    height: 40vh;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 23%;
+    transition: all .5s;
+  }
+
+  .nav-links li a{
+    font-size: 20px;
+    line-height: 100px;
+  }
+  #footer{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #footer p{
+    position: relative;
+  }
+  .p2{
+    position: absolute;
+    left: 0px;
+  }
+
+}
