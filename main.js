@@ -44,3 +44,11 @@ function secondFunc() {
 function thirdFunc() {
   location.reload();
 }
+
+const tl = gsap.timeline({defaults: { ease: "power1.out"} });
+
+tl.fromTo('img, ul', {opacity: 0}, {opacity: 1, duration: 1.5 });
+
+tl.fromTo('section div', {opacity: 0}, {opacity: 1, duration: 1.5 }, '-=1');
+
+tl.fromTo('footer p', {opacity: 0}, {opacity: 1, duration: 2 }, '-=1.2');
