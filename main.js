@@ -52,3 +52,23 @@ tl.fromTo('img, ul', {opacity: 0}, {opacity: 1, duration: 1.5 });
 tl.fromTo('section div', {opacity: 0}, {opacity: 1, duration: 1.5 }, '-=1');
 
 tl.fromTo('footer p', {opacity: 0}, {opacity: 1, duration: 2 }, '-=1.2');
+
+
+
+const navbarBtn = document.getElementById('navbar-simbol');
+const navLinks = document.getElementById('list-id');
+const navbarCont = document.getElementById('navbar-id');
+
+navbarBtn.addEventListener('click', () => {
+  // if(navbarCont.classList.contains('add-navbar') && navLinks.classList.contains('add-links')) {
+  //   navbarCont.classList.remove('add-navbar');
+  //   navLinks.classList.remove('add-links');
+  // }
+  // else{
+  //   navbarCont.classList.add('add-navbar');
+  //   navLinks.classList.add('add-links');
+  // }
+  navLinks.classList.toggle('add-links');
+  navbarCont.classList.toggle('add-navbar');
+
+});
